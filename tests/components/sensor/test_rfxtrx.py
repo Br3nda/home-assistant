@@ -14,6 +14,7 @@ from homeassistant.const import TEMP_CELCIUS
 
 from tests.common import get_test_home_assistant
 
+
 class TestSensorRfxtrx(unittest.TestCase):
     """ Test the Rfxtrx sensor. """
 
@@ -164,7 +165,7 @@ class TestSensorRfxtrx(unittest.TestCase):
 #
 #        rfxtrx.setup_platform(self.hass, config, add_dev_callback)
 #        self.assertEqual(0, len(devices))
-#        event = rfxtrx_core.get_rfx_object('0a520801070100b81b0279')        
+#        event = rfxtrx_core.get_rfx_object('0a520801070100b81b0279')
 #        event.data = bytearray(b'\nR\x08\x01\x07\x01\x00\xb8\x1b\x02y')
 #
 #        self.assertEqual(0, len(rfxtrx_core.RFX_DEVICES))        
@@ -187,10 +188,10 @@ class TestSensorRfxtrx(unittest.TestCase):
 #
 #        rfxtrx.setup_platform(self.hass, config, add_dev_callback)
 #        self.assertEqual(0, len(devices))
-#        event = rfxtrx_core.get_rfx_object('0a520801070100b81b0279')        
+#        event = rfxtrx_core.get_rfx_object('0a520801070100b81b0279')
 #        event.data = bytearray(b'\nR\x08\x01\x07\x01\x00\xb8\x1b\x02y')
 #
-#        self.assertEqual(0, len(rfxtrx_core.RFX_DEVICES))        
+#        self.assertEqual(0, len(rfxtrx_core.RFX_DEVICES))
 #        rfxtrx_core.RECEIVED_EVT_SUBSCRIBERS[0](event)
 #        self.assertEqual(0, len(rfxtrx_core.RFX_DEVICES))
 #
